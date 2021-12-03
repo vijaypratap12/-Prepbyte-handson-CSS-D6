@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./images/shara\ desert.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.main-container {
+  margin: 0px 50px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  border: 0px solid red;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar-menu ul li {
+  display: inline-block;
+}
+
+.navbar-menu ul li {
+  list-style: none;
+  margin: 0px 20px;
+}
+
+.navbar-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar-menu ul li a:hover {
+  color: grey;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  border: 0px solid green;
+}
+
+.content-heading h1 {
+  font-size: 85px;
+  color: white;
+  margin-top: 100px;
+}
+.content-heading p {
+  color: white;
+  margin-bottom: 50px;
+}
+.content-heading a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px 45px;
+  border-radius: 20px;
+}
+
+.galary-box {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-gap: 30px;
+}
+
+.content-galary1 {
+  background-image: url(./images/pic-1.png);
+  background-position: center;
+  background-size: cover;
+}
+.content-galary2 {
+  background-image: url(./images/pic-2.png);
+  background-position: center;
+  background-size: cover;
+}
+.content-galary3 {
+  background-image: url(./images/pic-3.png);
+  background-position: center;
+  background-size: cover;
+}
+.content-galary4 {
+  background-image: url(./images/pic-4.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.galary {
+  width: 200px;
+  border-radius: 20px;
+  height: 230px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.galary:hover {
+  transform: translateY(-15px);
+}
+
+.galary h1 {
+  font-size: 20px;
+  color: white;
+}
+.galary p {
+  font-size: 15px;
+  color: white;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .content-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .content-heading {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+  .content-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .content-heading {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 650px) {
+  .navbar ul li {
+    display: block;
+  }
+  .content-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .content-heading {
+    margin-bottom: 50px;
+  }
+  .content-heading h1 {
+    font-size: 55px;
+  }
+  .galary-box {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-gap: 30px;
+  }
+
+  .galary {
+    width: 250px;
+    height: 180px;
+  }
+}
